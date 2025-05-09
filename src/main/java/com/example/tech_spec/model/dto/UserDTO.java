@@ -1,5 +1,6 @@
 package com.example.tech_spec.model.dto;
 
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
@@ -19,7 +20,7 @@ public class UserDTO {
 
 
     @NotBlank(message = "this column not be empty")
-
+    @Email(message = "email has type dawad@gmail.com")
     @Size(max = 150 , message = "max length for email 50 ")
     private String email;
 }
